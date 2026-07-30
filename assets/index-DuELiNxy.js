@@ -1,4 +1,4 @@
-(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const a of document.querySelectorAll('link[rel="modulepreload"]'))r(a);new MutationObserver(a=>{for(const o of a)if(o.type==="childList")for(const t of o.addedNodes)t.tagName==="LINK"&&t.rel==="modulepreload"&&r(t)}).observe(document,{childList:!0,subtree:!0});function s(a){const o={};return a.integrity&&(o.integrity=a.integrity),a.referrerPolicy&&(o.referrerPolicy=a.referrerPolicy),a.crossOrigin==="use-credentials"?o.credentials="include":a.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function r(a){if(a.ep)return;a.ep=!0;const o=s(a);fetch(a.href,o)}})();function n(){return`
+(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const a of document.querySelectorAll('link[rel="modulepreload"]'))i(a);new MutationObserver(a=>{for(const o of a)if(o.type==="childList")for(const r of o.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&i(r)}).observe(document,{childList:!0,subtree:!0});function t(a){const o={};return a.integrity&&(o.integrity=a.integrity),a.referrerPolicy&&(o.referrerPolicy=a.referrerPolicy),a.crossOrigin==="use-credentials"?o.credentials="include":a.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function i(a){if(a.ep)return;a.ep=!0;const o=t(a);fetch(a.href,o)}})();(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))t(i);new MutationObserver(i=>{for(const a of i)if(a.type==="childList")for(const o of a.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&t(o)}).observe(document,{childList:!0,subtree:!0});function s(i){const a={};return i.integrity&&(a.integrity=i.integrity),i.referrerPolicy&&(a.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?a.credentials="include":i.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function t(i){if(i.ep)return;i.ep=!0;const a=s(i);fetch(i.href,a)}})();function n(){return`
     <nav class="navbar" id="navbar">
       <div class="navbar__container">
         <a href="#" class="navbar__logo">
@@ -148,7 +148,7 @@
         </div>
       </div>
     </section>
-  `}function v(){return`
+  `}function u(){return`
     <section class="depoimentos section" id="depoimentos">
       <div class="container">
         <h2 class="section__title">Quem mora recomenda</h2>
@@ -164,7 +164,7 @@
         </div>
       </div>
     </section>
-  `}function u(){return`
+  `}function v(){return`
     <section class="cta section" id="contato">
       <div class="container">
         <div class="cta__card">
@@ -216,8 +216,8 @@
   ${m()}
   ${p()}
   ${g()}
-  ${v()}
   ${u()}
+  ${v()}
   ${h()}
   ${f()}
-`;window.addEventListener("scroll",()=>{const i=document.getElementById("navbar");window.scrollY>50?i.classList.add("navbar--scrolled"):i.classList.remove("navbar--scrolled")});document.addEventListener("click",i=>{if(i.target.closest("#navbar-toggle")){const e=document.getElementById("navbar-menu"),s=document.getElementById("navbar-toggle");e.classList.toggle("navbar__menu--open"),s.classList.toggle("navbar__toggle--active")}!i.target.closest(".navbar")&&document.getElementById("navbar-menu").classList.contains("navbar__menu--open")&&(document.getElementById("navbar-menu").classList.remove("navbar__menu--open"),document.getElementById("navbar-toggle").classList.remove("navbar__toggle--active"))});document.addEventListener("click",i=>{const e=i.target.closest('a[href^="#"]');if(e){i.preventDefault();const s=document.querySelector(e.getAttribute("href"));s&&(s.scrollIntoView({behavior:"smooth"}),document.getElementById("navbar-menu").classList.remove("navbar__menu--open"),document.getElementById("navbar-toggle").classList.remove("navbar__toggle--active"))}});
+`;window.addEventListener("scroll",()=>{const e=document.getElementById("navbar");window.scrollY>50?e.classList.add("navbar--scrolled"):e.classList.remove("navbar--scrolled")});document.addEventListener("click",e=>{if(e.target.closest("#navbar-toggle")){const s=document.getElementById("navbar-menu"),t=document.getElementById("navbar-toggle");s.classList.toggle("navbar__menu--open"),t.classList.toggle("navbar__toggle--active")}!e.target.closest(".navbar")&&document.getElementById("navbar-menu").classList.contains("navbar__menu--open")&&(document.getElementById("navbar-menu").classList.remove("navbar__menu--open"),document.getElementById("navbar-toggle").classList.remove("navbar__toggle--active"))});document.addEventListener("click",e=>{const s=e.target.closest('a[href^="#"]');if(s){e.preventDefault();const t=document.querySelector(s.getAttribute("href"));t&&(t.scrollIntoView({behavior:"smooth"}),document.getElementById("navbar-menu").classList.remove("navbar__menu--open"),document.getElementById("navbar-toggle").classList.remove("navbar__toggle--active"))}});
