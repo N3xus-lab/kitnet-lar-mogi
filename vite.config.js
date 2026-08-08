@@ -6,7 +6,13 @@ export default defineConfig({
   base: '/kitnet-lar-mogi/',
   build: {
     outDir: 'dist',
-    assetsDir: 'assets'
+    assetsDir: 'assets',
+    rollupOptions: {
+      output: {
+        entryFileNames: 'assets/main.js',
+        assetFileNames: 'assets/style.css'
+      }
+    }
   },
   server: {
     port: 5173,
