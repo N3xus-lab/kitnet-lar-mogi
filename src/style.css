@@ -147,6 +147,21 @@ ul { list-style: none; }
 .whatsapp-float:hover { transform: scale(1.1); }
 .localizacao__fachada { margin-bottom: 1.5rem; border-radius: var(--radius); overflow: hidden; }
 .localizacao__fachada-img { width: 100%; height: 200px; object-fit: cover; border-radius: var(--radius); }
+
+/* ========== PROVA SOCIAL ========== */
+.prova-social { text-align: center; margin-top: 3rem; padding: 2rem; background: var(--cinza-claro); border-radius: var(--radius); }
+.prova-social__stars { font-size: 1.2rem; color: var(--mostarda); margin-bottom: 0.5rem; letter-spacing: 2px; }
+.prova-social__texto { font-size: 1rem; color: var(--cinza-escuro); margin-bottom: 1.2rem; }
+.prova-social__texto strong { color: var(--verde-escuro); }
+.btn--outline-instagram { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.8rem; border: 2px solid var(--verde-oliva); border-radius: 100px; color: var(--verde-escuro); font-weight: 600; font-size: 0.9rem; transition: all .2s; }
+.btn--outline-instagram:hover { background: var(--verde-oliva); color: var(--branco); }
+
+/* ========== FAIXA URGÊNCIA ========== */
+.faixa { background: var(--cinza-claro); }
+.faixa__card { background: var(--mostarda); padding: 3rem 2rem; border-radius: var(--radius); text-align: center; max-width: 700px; margin: 0 auto; }
+.faixa__title { font-family: var(--font-titulo); font-size: clamp(1.3rem, 2.5vw, 1.8rem); font-weight: 700; color: var(--branco); margin-bottom: 1.5rem; }
+.faixa__btn { background: var(--verde-escuro) !important; font-size: 1rem !important; padding: 1rem 2.5rem !important; }
+.faixa__btn:hover { background: var(--verde-oliva) !important; }
 /* ========== RESPONSIVO ========== */
 @media (max-width: 1024px) {
   .beneficios__grid { grid-template-columns: repeat(2,1fr); }

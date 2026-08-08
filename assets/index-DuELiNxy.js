@@ -1,8 +1,8 @@
-(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))t(i);new MutationObserver(i=>{for(const a of i)if(a.type==="childList")for(const o of a.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&t(o)}).observe(document,{childList:!0,subtree:!0});function s(i){const a={};return i.integrity&&(a.integrity=i.integrity),i.referrerPolicy&&(a.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?a.credentials="include":i.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function t(i){if(i.ep)return;i.ep=!0;const a=s(i);fetch(i.href,a)}})();function n(){return`
+(function(){const s=document.createElement("link").relList;if(s&&s.supports&&s.supports("modulepreload"))return;for(const a of document.querySelectorAll('link[rel="modulepreload"]'))i(a);new MutationObserver(a=>{for(const o of a)if(o.type==="childList")for(const r of o.addedNodes)r.tagName==="LINK"&&r.rel==="modulepreload"&&i(r)}).observe(document,{childList:!0,subtree:!0});function t(a){const o={};return a.integrity&&(o.integrity=a.integrity),a.referrerPolicy&&(o.referrerPolicy=a.referrerPolicy),a.crossOrigin==="use-credentials"?o.credentials="include":a.crossOrigin==="anonymous"?o.credentials="omit":o.credentials="same-origin",o}function i(a){if(a.ep)return;a.ep=!0;const o=t(a);fetch(a.href,o)}})();(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const i of document.querySelectorAll('link[rel="modulepreload"]'))t(i);new MutationObserver(i=>{for(const a of i)if(a.type==="childList")for(const o of a.addedNodes)o.tagName==="LINK"&&o.rel==="modulepreload"&&t(o)}).observe(document,{childList:!0,subtree:!0});function s(i){const a={};return i.integrity&&(a.integrity=i.integrity),i.referrerPolicy&&(a.referrerPolicy=i.referrerPolicy),i.crossOrigin==="use-credentials"?a.credentials="include":i.crossOrigin==="anonymous"?a.credentials="omit":a.credentials="same-origin",a}function t(i){if(i.ep)return;i.ep=!0;const a=s(i);fetch(i.href,a)}})();function n(){return`
     <nav class="navbar" id="navbar">
       <div class="navbar__container">
         <a href="#" class="navbar__logo">
-          <img src="/kitnet-lar-mogi/images/logo/logo-kitnet.jpg" alt="Kitnet Lar Mogi" class="navbar__logo-img" />
+          <img src="/images/logo/logo-kitnet.jpg" alt="Kitnet Lar Mogi" class="navbar__logo-img" />
           <span class="navbar__logo-text">Lar Mogi</span>
         </a>
         <ul class="navbar__menu" id="navbar-menu">
@@ -72,7 +72,7 @@
         <h2 class="section__title">Nossas Unidades</h2>
         <p class="section__subtitle">5 kitnets com nomes especiais, cada uma com seu charme</p>
         <div class="unidades__grid">
-          ${[{nome:"Gratidão",descricao:"Kitnet aconchegante, ideal para quem busca praticidade e conforto.",imagem:"/kitnet-lar-mogi/images/unidades/gratidao.jpg",disponivel:!1},{nome:"Sabedoria",descricao:"Ambiente bem distribuído com cozinha americana e ótima iluminação.",imagem:"/kitnet-lar-mogi/images/unidades/sabedoria.jpg",disponivel:!0},{nome:"Esperança",descricao:"Perfeita para casais, com espaço otimizado e decoração clean.",imagem:"/kitnet-lar-mogi/images/unidades/esperanca.jpg",disponivel:!0},{nome:"Felicidade",descricao:"Ampla e arejada, com área de serviço privativa.",imagem:"/kitnet-lar-mogi/images/unidades/felicidade.jpg",disponivel:!1},{nome:"Harmonia",descricao:"A melhor vista da região, com quarto separado e sala integrada.",imagem:"/kitnet-lar-mogi/images/unidades/harmonia.jpg",disponivel:!0}].map(e=>`
+          ${[{nome:"Gratidão",descricao:"Kitnet aconchegante, ideal para quem busca praticidade e conforto.",imagem:"/images/unidades/gratidao.jpg",disponivel:!1},{nome:"Sabedoria",descricao:"Ambiente bem distribuído com cozinha americana e ótima iluminação.",imagem:"/images/unidades/sabedoria.jpg",disponivel:!0},{nome:"Esperança",descricao:"Perfeita para casais, com espaço otimizado e decoração clean.",imagem:"/images/unidades/esperanca.jpg",disponivel:!0},{nome:"Felicidade",descricao:"Ampla e arejada, com área de serviço privativa.",imagem:"/images/unidades/felicidade.jpg",disponivel:!1},{nome:"Harmonia",descricao:"A melhor vista da região, com quarto separado e sala integrada.",imagem:"/images/unidades/harmonia.jpg",disponivel:!0}].map(e=>`
             <article class="unidade-card ${e.disponivel?"":"unidade-card--indisponivel"}">
               <div class="unidade-card__image-wrapper">
                 <img src="${e.imagem}" alt="Kitnet ${e.nome} - Kitnet Lar Mogi" class="unidade-card__image" loading="lazy" />
@@ -97,7 +97,7 @@
         <p class="section__subtitle">Cada detalhe pensado para seu conforto</p>
       </div>
       <div class="galeria__grid">
-        ${["/kitnet-lar-mogi/images/galeria/foto-01.jpg","/kitnet-lar-mogi/images/galeria/foto-02.jpg","/kitnet-lar-mogi/images/galeria/foto-03.jpg","/kitnet-lar-mogi/images/galeria/foto-04.jpg","/kitnet-lar-mogi/images/galeria/foto-05.jpg","/kitnet-lar-mogi/images/galeria/foto-06.jpg","/kitnet-lar-mogi/images/galeria/foto-07.jpg","/kitnet-lar-mogi/images/galeria/foto-08.jpg"].map((e,s)=>`
+        ${["/images/galeria/foto-01.jpg","/images/galeria/foto-02.jpg","/images/galeria/foto-03.jpg","/images/galeria/foto-04.jpg","/images/galeria/foto-05.jpg","/images/galeria/foto-06.jpg","/images/galeria/foto-07.jpg","/images/galeria/foto-08.jpg"].map((e,s)=>`
           <div class="galeria__item">
             <img src="${e}" alt="Kitnet Lar Mogi - Foto ${s+1}" class="galeria__image" loading="lazy" />
           </div>
@@ -134,7 +134,7 @@
           </div>
           <div class="localizacao__pontos">
             <div class="localizacao__fachada">
-              <img src="/kitnet-lar-mogi/images/fachada.jpg" alt="Fachada Kitnet Lar Mogi" class="localizacao__fachada-img" loading="lazy" />
+              <img src="/images/fachada.jpg" alt="Fachada Kitnet Lar Mogi" class="localizacao__fachada-img" loading="lazy" />
             </div>
             <h3>Próximo de você</h3>
             <ul>
@@ -182,7 +182,7 @@
       <div class="container">
         <div class="footer__grid">
           <div class="footer__brand">
-            <img src="/kitnet-lar-mogi/images/logo/logo-kitnet.jpg" alt="Kitnet Lar Mogi" class="footer__logo" />
+            <img src="/images/logo/logo-kitnet.jpg" alt="Kitnet Lar Mogi" class="footer__logo" />
             <p class="footer__desc">Conforto, segurança e praticidade para morar bem em Mogi das Cruzes.</p>
           </div>
           <div class="footer__links">

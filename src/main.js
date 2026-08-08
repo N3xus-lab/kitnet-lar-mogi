@@ -2,6 +2,7 @@ import "./style.css";
 import { Navbar } from "./components/Navbar.js";
 import { Hero } from "./components/Hero.js";
 import { Beneficios } from "./components/Beneficios.js";
+import { Faixa } from "./components/Faixa.js";
 import { Unidades } from "./components/Unidades.js";
 import { Galeria } from "./components/Galeria.js";
 import { Diferenciais } from "./components/Diferenciais.js";
@@ -15,6 +16,7 @@ document.querySelector("#app").innerHTML = `
   ${Navbar()}
   ${Hero()}
   ${Beneficios()}
+  ${Faixa()}
   ${Unidades()}
   ${Galeria()}
   ${Diferenciais()}
